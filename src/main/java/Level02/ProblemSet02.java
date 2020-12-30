@@ -1,5 +1,8 @@
 package Level02;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalTime;
+
 public class ProblemSet02 {
     /**
      * Have the function TimeConvert(num) take the num parameter being passed and return
@@ -7,7 +10,12 @@ public class ProblemSet02 {
      * the output should be 1:3). Separate the number of hours and minutes with a colon.
      */
     public String timeConvert(int num){
-        return null;
+        if(num > 60) {
+            int hours = num / 60;
+            int min = num - (hours * 60);
+            return hours + ":" + min;
+        }
+        return "0:" + num;
     }
 
     /**
@@ -20,6 +28,21 @@ public class ProblemSet02 {
      */
     public String countingMinutes(String str) {
         // code goes here
+        String[] split = str.split("-");
+        String time1 = split[0];
+        String time2 = split[1];
+
+        //Duration dur = Duration.between(localDateTimeIni, localDateTimeEnd);
+        //long millis = dur.toMillis();
+        //String.format("%02d:%02d:%02d",
+        //        TimeUnit.MILLISECONDS.toHours(millis),
+        //        TimeUnit.MILLISECONDS.toMinutes(millis) -
+        //        TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
+        //        TimeUnit.MILLISECONDS.toSeconds(millis) -
+        //        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+        //LocalTime lt = LocalTime.parse("16:30");
+
+
         return null;
     }
 

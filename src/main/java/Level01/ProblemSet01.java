@@ -9,8 +9,13 @@ public class ProblemSet01 {
      * separated by single spaces.
      */
     public String wordCount(String input) {
-        // code goes here
-        return null;
+        //Take the input
+        //split input on " "
+        //use .length to get length
+        //save length to an Integer variable
+        //return integer variable.toString()
+        Integer strLength = input.split(" ").length;
+        return strLength.toString();
     }
 
     /**
@@ -20,7 +25,11 @@ public class ProblemSet01 {
      */
 
     public String firstReverse(String input){
-        return null;
+        //create new StringBuilder and pass in input as argument
+        //call .reverse()
+        //call .toString()
+        //return in one line
+        return new StringBuilder(input).reverse().toString();
     }
 
     /**
