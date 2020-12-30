@@ -85,5 +85,4 @@ public class ProblemSet01Test {
         Assert.assertEquals(expected, actual);
     }
 
-
 }

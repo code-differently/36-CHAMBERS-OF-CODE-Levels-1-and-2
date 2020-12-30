@@ -11,7 +11,7 @@ public class ProblemSet02Test {
         int input = 126;
         String expected = "2:6";
         String actual = problemSet02.timeConvert(input);
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -20,7 +20,7 @@ public class ProblemSet02Test {
         int input = 45;
         String expected = "0:45";
         String actual = problemSet02.timeConvert(input);
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
