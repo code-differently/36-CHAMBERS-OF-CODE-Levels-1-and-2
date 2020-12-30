@@ -3,6 +3,8 @@ package Level02;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.text.ParseException;
+
 public class ProblemSet02Test {
 
     @Test
@@ -24,20 +26,22 @@ public class ProblemSet02Test {
     }
 
     @Test
-    public void countingMinutesTest01(){
+    public void countingMinutesTest01() throws ParseException {
         ProblemSet02 problemSet02 = new ProblemSet02();
         String input = "12:30pm-12:00am";
         String expected = "690";
         String actual = problemSet02.countingMinutes(input);
+        System.out.println(actual);
         Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void countingMinutesTest02(){
+    public void countingMinutesTest02() throws ParseException {
         ProblemSet02 problemSet02 = new ProblemSet02();
         String input = "1:23am-1:08am";
         String expected = "1425";
         String actual = problemSet02.countingMinutes(input);
+        System.out.println(actual);
         Assert.assertEquals(actual, expected);
     }
 
