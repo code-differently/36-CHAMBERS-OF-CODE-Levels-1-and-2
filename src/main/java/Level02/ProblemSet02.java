@@ -36,7 +36,7 @@ public class ProblemSet02 {
         //step 5 use a static int get method to get time in minutes
         //step 6: use a parameter of string type time inside the getTimeInMinutes method
         //step 7: initiate a boolean to check if it is AM and set it to false
-        //step 8:
+        //step 8:multiply the integer value of times by 60 //step 9: return the string value of the difference between endTime ans startTime
         String[] times = str.split("-");
         int startTime = getTimeInMinutes(times[0]);
         int endTime = getTimeInMinutes(times[1]);
